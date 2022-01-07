@@ -1,0 +1,37 @@
+**  Backend  Connection(Nodejs) **
+1)  Create folder on Desktop 
+2) Open into VSCode
+3) Create database and table into Mysql
+4) Goto terminal and run the commands one by one
+   a) npm init
+Make the src folder into that folder and create user.js and main.js files in src
+   b) npm install mysql
+   c) npm install bluebird
+ 
+5) Run the program (node src/program name.js) on vscode for connection checking if error then run below command on mysql
+  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'cdac';
+6) Goto terminal and run the commands one by one
+   a) npm install experss
+   b) npm install nodemon (for autmatically server starting)
+
+  Write below lines in user.js program. 
+
+const mysql = require("mysql");
+const Promise = require("bluebird");
+Promise.promisifyAll(require("mysql/lib/Connection").prototype);
+
+ write below line in scripts of package.json 
+  "start": "nodemon src/main.js",
+
+   c) npm install cors
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**  Frontend (React) **
+1) Goto the command pompt and type belowline
+ npx create-react-app my-project(Name of folder)
+2) Open my-project folder in vscode 
+3) run the below command on terminal
+  npm start   (Till the Happy hacking comes)
+4) npm install axios
+====================================================================================================
+ <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
